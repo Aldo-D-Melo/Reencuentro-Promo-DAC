@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reencuentro Promoción 99 · I.E. N.° 80175 Mártir Daniel Alcides Carrión</title>
+  <meta name="description" content="Reencuentro de la Promoción 1999 de la I.E. N.° 80175 Mártir Daniel Alcides Carrión - El Calvario. Sube tu foto y deja tu mensaje.">
+  <meta name="theme-color" content="#0b1446">
+
+  <!-- Open Graph: así se verá al compartir el enlace por WhatsApp/Facebook -->
+  <meta property="og:title" content="Reencuentro Promoción 99 · Daniel Alcides Carrión">
+  <meta property="og:description" content="¡Volvemos a vernos! Sube tu foto y deja tu mensaje para la promo.">
+  <meta property="og:image" content="insignia.jpeg">
+
+  <link rel="icon" href="insignia.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Inter:wght@300;400;500;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============ NAVEGACIÓN ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#inicio" class="nav__brand">
+        <img src="insignia.jpeg" alt="Insignia I.E. 80175" class="nav__logo">
+        <span>Promo <strong>99</strong></span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__links" id="navLinks">
+        <a href="#invitacion">Invitación</a>
+        <a href="#sumate">Súmate</a>
+        <a href="#muro">Muro de recuerdos</a>
+        <a href="#sumate" class="btn btn--gold btn--sm">Subir mi foto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="hero__bg" aria-hidden="true">
+        <span class="orb orb--1"></span>
+        <span class="orb orb--2"></span>
+        <span class="orb orb--3"></span>
+        <div class="hero__grid"></div>
+        <div class="particles" id="particles"></div>
+      </div>
+
+      <div class="container hero__content">
+        <div class="hero__crest reveal">
+          <div class="crest-ring"></div>
+          <img src="insignia.jpeg" alt="Insignia de la I.E. N.° 80175 Mártir Daniel Alcides Carrión">
+        </div>
+
+        <p class="eyebrow reveal">I.E. N.° 80175 · El Calvario</p>
+        <h1 class="hero__title reveal">
+          <span class="hero__title-small">Reencuentro</span>
+          Promoción <span class="gold-text">99</span>
+        </h1>
+        <p class="hero__subtitle reveal">Mártir Daniel Alcides Carrión</p>
+
+        <div class="quote-rotator reveal" aria-live="polite">
+          <span class="quote-rotator__mark">“</span>
+          <p id="heroQuote">Los años pasan, pero la amistad de verdad no se gradúa nunca.</p>
+        </div>
+
+        <div class="countdown reveal" id="countdown" aria-label="Cuenta regresiva al reencuentro">
+          <div class="countdown__item"><span id="cdDays">00</span><small>Días</small></div>
+          <div class="countdown__item"><span id="cdHours">00</span><small>Horas</small></div>
+          <div class="countdown__item"><span id="cdMinutes">00</span><small>Minutos</small></div>
+          <div class="countdown__item"><span id="cdSeconds">00</span><small>Segundos</small></div>
+        </div>
+
+        <div class="hero__cta reveal">
+          <a href="#sumate" class="btn btn--gold">¡Quiero estar en el muro!</a>
+          <a href="#invitacion" class="btn btn--ghost">Ver invitación</a>
+        </div>
+      </div>
+
+      <a href="#invitacion" class="scroll-hint" aria-label="Bajar a la invitación"><span></span></a>
+    </section>
+
+    <!-- ============ INVITACIÓN ============ -->
+    <section class="section invitation" id="invitacion">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow eyebrow--dark">Estás cordialmente invitado</p>
+          <h2 class="section__title">Han pasado <span class="accent" id="yearsSince">27</span> años…<br>y es hora de volver a vernos</h2>
+        </div>
+
+        <article class="invite-card reveal">
+          <div class="invite-card__ribbon">Promo 1999</div>
+          <img src="insignia.jpeg" alt="" class="invite-card__watermark" aria-hidden="true">
+
+          <p class="invite-card__lead">
+            Querido compañero, querida compañera:
+          </p>
+          <p class="invite-card__text">
+            Las aulas, el patio, las formaciones de los lunes, los recreos compartidos y aquellas
+            travesuras que hoy nos sacan una sonrisa… todo eso nos une para siempre.
+            Te invitamos a celebrar nuestra historia en el <strong>Reencuentro de la Promoción 99</strong>
+            de la I.E. N.° 80175 <strong>Mártir Daniel Alcides Carrión</strong>.
+            Ven con tus anécdotas, tu alegría y las ganas de abrazar a quienes caminaron contigo esos años.
+          </p>
+
+          <div class="invite-details">
+            <div class="detail">
+              <div class="detail__icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+              </div>
+              <div><small>Fecha</small><strong id="eventDateText">Por confirmar</strong></div>
+            </div>
+            <div class="detail">
+              <div class="detail__icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              </div>
+              <div><small>Hora</small><strong id="eventTimeText">Por confirmar</strong></div>
+            </div>
+            <div class="detail">
+              <div class="detail__icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+              </div>
+              <div><small>Lugar</small><strong id="eventPlaceText">Por confirmar</strong></div>
+            </div>
+          </div>
+
+          <p class="invite-card__sign">¡Te esperamos, promo!</p>
+        </article>
+
+        <div class="stats">
+          <div class="stat reveal"><span class="stat__num" data-count="1999">0</span><span class="stat__label">El año que nos marcó</span></div>
+          <div class="stat reveal"><span class="stat__num" id="statYears" data-count="27">0</span><span class="stat__label">Años de historias por contar</span></div>
+          <div class="stat reveal"><span class="stat__num" id="statWall">0</span><span class="stat__label">Compañeros ya en el muro</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BANDA MOTIVACIONAL ============ -->
+    <section class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Promo 99 ★ Siempre unidos ★ Carrionistas de corazón ★ El Calvario ★ Volvemos a vernos ★</span>
+        <span>Promo 99 ★ Siempre unidos ★ Carrionistas de corazón ★ El Calvario ★ Volvemos a vernos ★</span>
+      </div>
+    </section>
+
+    <!-- ============ FORMULARIO ============ -->
+    <section class="section join" id="sumate">
+      <div class="container join__grid">
+        <div class="join__intro reveal">
+          <p class="eyebrow">Súmate al muro</p>
+          <h2 class="section__title section__title--light">Deja tu huella<br>en la Promo 99</h2>
+          <p class="join__text">
+            Sube una foto (de ayer o de hoy), escribe tu nombre y un mensaje corto.
+            Tu mensaje aparecerá <strong>en la parte posterior de tu foto</strong>:
+            tus compañeros solo tendrán que voltearla para leerte.
+          </p>
+          <p class="join__motivation" id="formMotivation">✨ Tu foto puede ser la que le saque una sonrisa a toda la promo.</p>
+
+          <!-- Vista previa en vivo -->
+          <div class="preview">
+            <p class="preview__label">Vista previa · haz clic para voltear</p>
+            <div class="flip-card flip-card--preview" id="previewCard" tabindex="0" role="button" aria-label="Voltear vista previa">
+              <div class="flip-card__inner">
+                <div class="flip-card__front">
+                  <div class="polaroid">
+                    <div class="polaroid__photo" id="previewPhoto">
+                      <span class="polaroid__placeholder">Tu foto aquí</span>
+                    </div>
+                    <p class="polaroid__caption" id="previewNameFront">Tu nombre</p>
+                  </div>
+                </div>
+                <div class="flip-card__back">
+                  <div class="note">
+                    <p class="note__msg" id="previewMsg">Aquí se verá tu mensaje para la promo…</p>
+                    <p class="note__name" id="previewNameBack">— Tu nombre</p>
+                    <span class="note__stamp">Promo 99</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="form reveal" id="memoryForm" novalidate>
+          <h3 class="form__title">Tu tarjeta de recuerdo</h3>
+
+          <label class="dropzone" id="dropzone" for="photoInput">
+            <input type="file" id="photoInput" accept="image/*" hidden>
+            <div class="dropzone__content" id="dropzoneContent">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 16l4-4 4 4 3-3 5 5"/><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="9" r="1.6"/></svg>
+              <p><strong>Arrastra tu foto aquí</strong><br>o haz clic para elegirla</p>
+              <small>JPG o PNG · se optimiza automáticamente</small>
+            </div>
+            <img id="dropzoneImg" alt="Foto seleccionada" hidden>
+          </label>
+          <p class="form__error" id="errPhoto"></p>
+
+          <div class="field">
+            <input type="text" id="nameInput" maxlength="60" placeholder=" " autocomplete="name" required>
+            <label for="nameInput">Nombre y apellido</label>
+          </div>
+          <p class="form__error" id="errName"></p>
+
+          <div class="field">
+            <textarea id="msgInput" maxlength="220" rows="4" placeholder=" " required></textarea>
+            <label for="msgInput">Tu mensaje para la promo</label>
+            <span class="field__counter"><span id="msgCount">0</span>/220</span>
+          </div>
+          <p class="form__error" id="errMsg"></p>
+
+          <div class="form__suggestions" aria-label="Ideas de mensaje">
+            <span>¿Sin ideas?</span>
+            <button type="button" class="chip" data-suggest="¡Qué alegría volver a verlos! Gracias por tantos recuerdos bonitos.">Alegría</button>
+            <button type="button" class="chip" data-suggest="Nunca olvidaré los recreos y las risas en el salón. ¡Los quiero, promo!">Nostalgia</button>
+            <button type="button" class="chip" data-suggest="Carrionistas siempre. ¡Nos vemos en el reencuentro con la mejor energía!">Orgullo</button>
+          </div>
+
+          <button type="submit" class="btn btn--gold btn--block" id="submitBtn">
+            <span class="btn__text">Publicar en el muro</span>
+            <span class="btn__loader" aria-hidden="true"></span>
+          </button>
+          <p class="form__note">Tu foto se guarda optimizada. Escribe con cariño: este muro es de todos.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ MURO DE RECUERDOS ============ -->
+    <section class="section wall" id="muro">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow eyebrow--dark">Muro de recuerdos</p>
+          <h2 class="section__title">Los rostros de la <span class="accent">Promo 99</span></h2>
+          <p class="section__desc">Pasa el cursor o toca cada foto para leer el mensaje que dejó cada compañero.</p>
+        </div>
+
+        <div class="wall__toolbar reveal">
+          <div class="search">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+            <input type="search" id="searchInput" placeholder="Buscar a un compañero…" aria-label="Buscar compañero">
+          </div>
+          <span class="badge" id="wallCount">0 recuerdos</span>
+        </div>
+
+        <div class="wall__grid" id="wallGrid"></div>
+
+        <div class="empty" id="emptyState">
+          <img src="insignia.jpeg" alt="" aria-hidden="true">
+          <h3>El muro te está esperando</h3>
+          <p>Sé el primero de la promo en dejar su foto y su mensaje. ¡Los demás te seguirán!</p>
+          <a href="#sumate" class="btn btn--blue">Ser el primero</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CIERRE ============ -->
+    <section class="closing">
+      <div class="container closing__inner reveal">
+        <p class="closing__quote" id="closingQuote">“No importa cuántos años pasen: cuando nos juntamos, volvemos a tener 16.”</p>
+        <a href="#sumate" class="btn btn--gold">Súmate ahora</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="insignia.jpeg" alt="Insignia">
+        <div>
+          <strong>Promoción 1999</strong>
+          <span>I.E. N.° 80175 Mártir Daniel Alcides Carrión · El Calvario</span>
+        </div>
+      </div>
+      <p class="footer__credit">Hecho con 💙 por y para la Promo 99 · <span id="year"></span></p>
+    </div>
+  </footer>
+
+  <!-- Elementos flotantes -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+  <button class="to-top" id="toTop" aria-label="Volver arriba">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 15l6-6 6 6"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
